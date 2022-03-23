@@ -42,16 +42,19 @@ i{ color:#2C5371; }
     color: #72984B; 
     font-size: 1.2em;
 }
-.vetSearchBox h1{ 
+.vetSearchBox h1, #aboutUs h1{ 
     font-family:  'Anton', sans-serif;
     letter-spacing: 2px;
     font-size: 5em !important;
     font-weight: 600;
     margin-bottom: 3rem;
 }
+.vetSearchResults{
+    display:none;
+}
 .full-width{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 }
 
 .full-width-login{
@@ -60,7 +63,22 @@ i{ color:#2C5371; }
     height: 70vh;
 }
 
+
+.aboutUsSection .aboutUsImage{ 
+    float: left;
+    margin-left: 30%;
+    margin-right: 5em;
+
+}
+.aboutUsSection{
+    padding-top: 10em; 
+    
+
+}
+
+
 .grey-bg{
+
     background-color:#878472;
     color: white;
 }
@@ -70,6 +88,26 @@ i{ color:#2C5371; }
 }
 
 a{ text-decoration: none; }
+
+
+table{
+    width:80%;
+    border-collapse: collapse;
+    color:#0C120C;
+
+}
+th,td{
+    color:#2C5371;
+    font-size: 1.2em;
+    text-align: left;
+    
+}
+
+td{
+    /* padding: 8px;     */
+}
+  
+tr:nth-child(even) {background-color: #f5f5f5;}
 
 button:hover {cursor: pointer }
 
@@ -168,6 +206,8 @@ header{
 
 
 .vetSearchResults h3{
+    font-size: 2em;
+    color:#0C120C;
     padding-top: 5em;
     padding-bottom: 2em;
 }
@@ -201,15 +241,17 @@ section.vetSearchResults{
 #topSearchResults{
     height:40vh;
     margin: 0 auto;
-    /* margin-top: 5em; */
+    margin-bottom: 2.5em; 
 
 }
-th{
-    color:#2C5371;
-    font-size: 1.2em;
-    text-align: left;
-    padding-right: 5em;
+.resultRow{
+    height: 2em;
+    /* border: 2px solid #2C5371; */
+    margin-bottom:1em;
+    
 }
+
+
 
 
 
@@ -220,7 +262,9 @@ th{
     background-color:#2C5371;
     color: white;
 }
-.aboutUsImage{
+.aboutUsImage img{
+    height: 500px;
+    width: 400px;
     margin-right: 2em;
 }
 

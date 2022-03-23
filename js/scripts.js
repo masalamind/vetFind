@@ -13,9 +13,19 @@ $(document).ready(function(){
             
             var animalCategory = $("#animalCategory").val();
             var countyLocation = $("#countyLocation").val();
-
-            alert("hey ya");
+    
             console.log(animalCategory + " "+ countyLocation);
+
+            // Read from data store 
+            $('.vetSearchResults').toggle(2000);
+
+            for (var i = 0 ; i < 5; i++){                        
+                
+                $("#registeredVetsResults").append("<tr class='resultRow'><td>john</td><td>Nairobi</td><td>general</td><td>0722222222</td></tr>");
+                
+            }
+
+            
 
         }
 
