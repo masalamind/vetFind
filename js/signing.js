@@ -161,21 +161,21 @@ const loginValidation = ()=>{
     else{
       //directs to the page matching the input passwords and email
 
-      
+      redirectPage();
     }
   }
 
 
 
-  // const redirectPage = ()=>{
+  const redirectPage = ()=>{
 
-  //   let check = document.getElementById("iamAVet")
-  //   if(check.checked == true){
-  //     document.location.href = "../homevet.html";   
+    let check = document.getElementById("iamAVet")
+    if(check.checked == true){
+      document.location.href = "../index.html";   
 
-  //   }
-  //   else{
-  //     window.location.href = "../userHome.html";
-  //     $("#theName").text(addedName);
-  //   }
-  // }
+    }
+    else{
+      window.location.href = "../index.html";
+      $("#theName").text(addedName);
+    }
+  }
