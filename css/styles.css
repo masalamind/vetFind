@@ -53,6 +53,12 @@ i{ color:#2C5371; }
     height: 100vh;
 }
 
+.full-width-login{
+    padding-top: 10em;
+    width: 100vw;
+    height: 70vh;
+}
+
 .grey-bg{
     background-color:#878472;
     color: white;
@@ -311,4 +317,29 @@ section#blog{
     padding: 0 7em;
     margin-bottom: 2em;
 
+}
+
+
+#signInPg button#signInBtn, #signInBtn2{
+    background-color:#72984B !important;
+    color: white; 
+    padding: 1em; 
+    border-radius: 4px !important;
+}
+
+#signInPg button#signUpBtn{
+    background-color: white !important; 
+    border-radius: 4px !important; 
+    padding: 1em; 
+    color:#0C120C;
+    border: 2px solid #72984B !important;
+}
+
+#signInPg span#signUp{
+    background-color: white !important; 
+    border-radius: 4px !important; 
+    padding: 1em; 
+    color:#0C120C;
+    border: 2px solid #2C5371 !important;
+    
 }
