@@ -47,6 +47,7 @@
    <p>
     Not a member?
     <br>
+    
     <span id="signUp" class="btn bg-info form-control signUp">Sign Up</span>
   </p>
   </fieldset>
@@ -56,9 +57,10 @@
 
 <form action=""class="sign-up w-75 m-auto w-md-50 " id="signUp">
   <fieldset>
-    <legend>Sign-Up</legend>
+    <legend>Sign-Up </legend>
+    <small id="emailHelp" class="form-text text-muted">Check the 'I am a vet' if you are a vet'.</small>
   <div class="form-group">
-  <label for="">Name <span id="errName" class="text-danger d-none">* Required</span> </label>
+  <label for="">Name <span id="errName" class="text-danger error"></span> </label>
   <input type="text" id="nameUp" class="form-control">
   </div>
   <div class="form-group">
@@ -67,19 +69,19 @@
   <small id="numberHelp" class="form-text text-muted">In the format +254 ...</small>
 </div>
   <div class="form-group">
-  <label for="">Email <span id="errMail" class="text-danger d-none">* Required</span></label>
+  <label for="">Email <span class="text-danger error "></span></label>
   <input type="email" id="mailUp"class="form-control">
   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone.</small>
   </div>
   <div class="form-group">
-  <label for="">Password <span id="errPass1" class="text-danger d-none">* Required </span></label>
+  <label for="">Password <span class="text-danger error "> </span></label>
   <i class="bi bi-eye-slash  float-end" id="togglePassword1"></i>   
   <input type="password" id="passwordUp" minlength="8" class="form-control">
   <small id="passwordHelp" class="form-text text-muted">Atleast 8 characters, a number and a letter.</small>
   </div>
 
   <div class="form-group">
-  <label for="">Confirm Password <span id="errPass2" class="text-danger d-none">* Password Mismatch</span></label>
+  <label for="">Confirm Password <span id="errPass2" class="text-danger error"></span></label>
   <i class="bi bi-eye-slash float-end" id="togglePassword2"></i>
   <input type="password" id="passwordUp2" minlength="8" class="form-control">
   </div>
@@ -124,6 +126,15 @@
     </select>
   </div>
 </form> -->
+
+<div class="portfolio">
+  <p>
+    Welcome
+    <span id="theName">
+
+    </span>
+  </p>
+</div>
 
 
 

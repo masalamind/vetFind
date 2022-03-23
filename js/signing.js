@@ -1,124 +1,26 @@
+const form = document.getElementById("signUp");
+const username = document.getElementById('nameUp');
+const number = document.getElementById("numberUp");
+const email = document.getElementById('mailUp');
+const password = document.getElementById('passwordUp');
+const password2 = document.getElementById('passwordUp2');
+const submitSignUp = document.getElementById('signUpBtn');
 
+// $("#signUpBtn").click(function(e){
+//   e.preventDefault();
+//   validateFormData();
 
-$("#signUpBtn").click(function(e){
-  e.preventDefault();
-  validateFormData();
+// });
 
-});
-
-$(".signUp").click(function(){
-
-  $(".sign-up").toggle();
-  $(".sign-in").toggle();
-
-});
-
-$("#signInBtn2").click(function(){
-  $(".sign-up").toggle();
-  $(".sign-in").toggle();
-
-});
-
-$("#signInBtn").click(function(e){
+submitSignUp.addEventListener('click', e => {
   e.preventDefault();
 
-  loginValidation();
+  validateInputs();
+  
+  
+  
+});
 
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const validateFormData = ()=>{
-  let addedName = $("#nameUp").val();
-  let addedPhone = $("#numberUp").val();
-  let addedMail = $("#mailUp").val();
-  let addedPassword = $("#passwordUp").val();
-  let addedPassword2 = $("#passwordUp2").val();
- 
-  let phoneMatch = "^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"
-  // let passWordCriteria = bb;
-
-  if(addedName == "" || addedName.length < 6){
-    $("#nameUp").css("outline","3px solid red");
-    $("#errName").removeClass("d-none");
-
-  }
-  else if(addedPhone == ""||addedPhone.length<10 ||addedPhone.match(phoneMatch)){
-    $("#numberUp").css("border","3px solid red");
-    $("#errNumber").removeClass("d-none");
-
-  }
-  else if(addedMail == ""){
-    $("#mailUp").css("border","3px solid red");
-    $("#errMail").removeClass("d-none");
-
-  }
-  else if(addedPassword == "" || addedPassword.length < 8){
-    $("#passwordUp").css("outline","3px solid red");
-    $("#errPass1").removeClass("d-none");
-    
-
-  }
-  else if(addedPassword !== addedPassword2){
-    $("#passwordUp2").css("outline","3px solid red");
-    $("#errPass2").removeClass("d-none");
-
-  }
-  else{
-   
-    $("#theName").text(addedName);
-    $("#theName").text("this");
-    
-    let check = document.getElementById("iamAVet")
-    if(check.checked == true){
-
-      window.location.href = "../homevet.html";
-      
-
-    }
-    else{
-      window.location.href = "../userHome.html";
-
-    }
-  }
-}
-const loginValidation = ()=>{
-  let loginMail = $("#mail").val();
-  let loginPass = $("#password").val();
-
-  if(loginMail == "" || loginPass == ""){
-    $("#loginerr").removeClass("d-none");
-
-  }
-
-
-}
-const setNameOnProfile = ()=>{
-  let addedName = $("#nameUp").val();
-  $("#theName").text(addedName);
-
-}
 
 let pass1 = document.getElementById("password");
 let pass2 = document.getElementById("passwordUp");
@@ -151,3 +53,111 @@ eye2.addEventListener("click",function(){
   checkPassword(pass2,eye2);
 });
 
+$(".signUp").click(function(){
+
+  $(".sign-up").toggle();
+  $(".sign-in").toggle();
+
+});
+
+$("#signInBtn2").click(function(){
+  $(".sign-up").toggle();
+  $(".sign-in").toggle();
+
+});
+
+$("#signInBtn").click(function(e){
+  e.preventDefault();
+
+  loginValidation();
+
+})
+
+
+
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
+
+  errorDisplay.innerText = message;
+  inputControl.classList.add('error');
+  inputControl.classList.remove('success')
+}
+
+const setSuccess = element => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
+
+  errorDisplay.innerText = '';
+  inputControl.classList.add('success');
+  inputControl.classList.remove('error');
+};
+
+const isValidEmail = email => {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+
+const validateInputs = () => {
+  const usernameValue = username.value.trim();
+  const emailValue = email.value.trim();
+  const numberValue = number.value.trim();
+  const passwordValue = password.value.trim();
+  const password2Value = password2.value.trim();
+
+  if(usernameValue === '') {
+      setError(username, 'Username is required');
+  } else {
+      setSuccess(username);
+  }
+
+  if(emailValue === '') {
+      setError(email, 'Email is required');
+  } else if (!isValidEmail(emailValue)) {
+      setError(email, 'Provide a valid email address');
+  } else {
+      setSuccess(email);
+  }
+
+  if(passwordValue === '') {
+      setError(password, 'Password is required');
+  } else if (passwordValue.length < 8 ) {
+      setError(password, 'Password must be at least 8 character.')
+  } else {
+      setSuccess(password);
+  }
+
+  if(password2Value === '') {
+      setError(password2, 'Please confirm your password');
+  } else if (password2Value !== passwordValue) {
+      setError(password2, "Passwords doesn't match");
+  } else {
+      setSuccess(password2);
+  }
+
+  
+
+};
+
+const loginValidation = ()=>{
+    let loginMail = $("#mail").val();
+    let loginPass = $("#password").val();
+  
+    if(loginMail == "" || loginPass == ""){
+      $("#loginerr").removeClass("d-none");
+  
+    }
+  }
+
+  // const redirectPage = ()=>{
+
+  //   let check = document.getElementById("iamAVet")
+  //   if(check.checked == true){
+  //     document.location.href = "../homevet.html";   
+
+  //   }
+  //   else{
+  //     window.location.href = "../userHome.html";
+  //     $("#theName").text(addedName);
+  //   }
+  // }
