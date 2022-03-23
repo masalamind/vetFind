@@ -57,16 +57,25 @@ $(".signUp").click(function(){
 
   $(".sign-up").toggle();
   $(".sign-in").toggle();
+  
 
 });
 
 $("#signInBtn2").click(function(){
+
+  
   $(".sign-up").toggle();
   $(".sign-in").toggle();
 
 });
+const reset = ()=>{
+  
+  document.querySelector("signUp").reset();
+  document.querySelector("signIn").reset();
 
-$("#signInBtn").click(function(e){
+}
+
+$("#signIn").submit(function(e){
   e.preventDefault();
 
   loginValidation();
@@ -147,8 +156,13 @@ const loginValidation = ()=>{
       $("#loginerr").removeClass("d-none");
   
     }
+    else{
+      //directs to the page matching the input passwords and email
+    }
   }
 
+
+  
   // const redirectPage = ()=>{
 
   //   let check = document.getElementById("iamAVet")
