@@ -58,6 +58,7 @@ $(".signUp").click(function(){
   $(".sign-up").toggle();
   $(".sign-in").toggle();
   
+  
 
 });
 
@@ -66,6 +67,7 @@ $("#signInBtn2").click(function(){
   
   $(".sign-up").toggle();
   $(".sign-in").toggle();
+  window.location.reload();
 
 });
 const reset = ()=>{
@@ -162,7 +164,7 @@ const loginValidation = ()=>{
   }
 
 
-  
+
   // const redirectPage = ()=>{
 
   //   let check = document.getElementById("iamAVet")
