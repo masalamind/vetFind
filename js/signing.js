@@ -171,7 +171,10 @@ const loginValidation = ()=>{
 
     let check = document.getElementById("iamAVet")
     if(check.checked == true){
-      document.location.href = "../index.html";   
+      document.location.href = "../vetDashboard.html";   
+
+      // push details to the vets store
+      // create a new vet 
 
     }
     else{
