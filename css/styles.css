@@ -132,6 +132,11 @@ select{
 
 /* Hero Section Styles */
 
+.top-nav a:hover, .main-nav:hover{
+    color:#72984B;
+}
+
+
 .top-nav{
     background-color: white;
     display: flex;
@@ -161,8 +166,9 @@ select{
     
     margin-right: 4em;
     font-size: 1.1em;      
-
+    
 }
+.main-nav ul li a:hover{ color:#72984B !important; }
 
 .main-nav ul li a{
     text-decoration: none;
@@ -219,7 +225,7 @@ header{
 #mainSearchVetBtn:hover{
     background-color: #2C5371;
     color: #72984B;
-    border: 4px solid #72984B;
+    /* border: 4px solid #72984B; */
 }
 #mainSearchVetBtn{
     background-color: #72984B;
@@ -227,8 +233,7 @@ header{
     color: white; 
     margin-left: 3em; 
     border-radius: 4px; 
-    /* position: relative;
-    bottom: .7em; */
+
 
 }
 
