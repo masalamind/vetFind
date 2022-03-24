@@ -394,3 +394,17 @@ section#blog{
     border: 2px solid #2C5371 !important;
     
 }
+
+
+#vetDashboardPg .vetDashboardArea input[type="checkbox"]{ margin-right: .5em; } 
+#vetDashboardPg .vetDashboardArea label{ 
+        font-size: 1.2em; 
+        color: #2C5371; 
+        font-weight: bold; 
+  }
+
+#vetDashboardPg .vetDashboardArea ul li{ margin-bottom: .5em;}
+
+#vetDashboardPg .vetDashboardArea{
+    margin: 10em auto; 
+}

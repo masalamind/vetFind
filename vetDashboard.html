@@ -10,7 +10,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign-In</title>
+  <title>Vet Dashboard</title>
 
 
   <style>
@@ -41,55 +41,59 @@
     </div> <!-- .login -->
   </div> <!-- .top-nav-->
   <div class="main-content full-width">
+    <div class="vetDashboardArea container">
+      <h1>Veterinarian Dashboard </h1>
 
-    <h3>Veterinarian Dashboard </h3>
-
-    <p>Users will find you based on the details you provide us with on this page. </p>
-
-
-    <form action="#" method="get">
-        <label for="">Which of these categories do you mostly offer services on </label>
-        <ul>
-            <li><input type="checkbox" class="animalCatDashboard" id="pets">Pets</li>
-            <li><input type="checkbox" class="animalCatDashboard" id="poultryandbirds">Poultry & Birds</li>
-            <li><input type="checkbox" class="animalCatDashboard" id="livestock">Livestock</li>
-            <li><input type="checkbox" class="animalCatDashboard" id="sheepandgoats">Sheep & Goats</li>
-            <li><input type="checkbox" class="animalCatDashboard" id="horses">Horses</li>
-            <li><input type="checkbox" class="animalCatDashboard" id="fish">Fish</li>
-        </ul>
-
-        <label for="">Which county are you located in?</label>
-        <select name="countyLocation" id="countyLocation">
-            <option value="Nairobi">Nairobi</option>
-            <option value="Mombasa">Mombasa</option>
-            <option value="Kisumu">Kisumu</option>
-            <option value="Eldoret">Eldoret</option>
-            <option value="Nakuru">Nakuru</option>
-            <option value="Thika">Thika</option>
-            <option value="Naivasha">Naivasha</option>
-            <option value="Garisa">Garisa</option>
-            <option value="Nyeri">Nyeri</option>
-            <option value="Malindi">Malindi</option>
-            <option value="Machakos">Machakos</option>
-            <option value="Homabay">Homabay</option>
-            <option value="Kisii">Kisii</option>
-            <option value="Limuru">Limuru</option>
-            <option value="AthiRiver">AthiRiver</option>
-            <option value="Nyandarua">Nyandarua</option>
-            <option value="Makueni">Makueni</option>
-            <option value="Kiambu">Kiambu</option>
-            <option value="Turkana">Turkana</option>
-            <option value="WestPokot">WestPokot</option>
-            <option value="TransNzoia">TransNzoia</option>
-            <option value="Kilifi">Kilifi</option>
-            <option value="Kitui">Kitui</option>
-            <option value="Meru">Meru</option>
+      <p>Users will find you based on the details you provide us with on this page. </p>
+      <br><br>
 
 
-        </select>
+      <form action="#" method="get" id="vetInfo">
+          <label for="">Which category do you mostly offer services in </label>
+          <ul>
+              <li><input type="checkbox" class="animalCatDashboard" id="pets">Pets</li>
+              <li><input type="checkbox" class="animalCatDashboard" id="poultryandbirds">Poultry & Birds</li>
+              <li><input type="checkbox" class="animalCatDashboard" id="livestock">Livestock</li>
+              <li><input type="checkbox" class="animalCatDashboard" id="sheepandgoats">Sheep & Goats</li>
+              <li><input type="checkbox" class="animalCatDashboard" id="horses">Horses</li>
+              <li><input type="checkbox" class="animalCatDashboard" id="fish">Fish</li>
+          </ul>
+
+          <label for="">Which county are you located in?</label>
+          <select name="countyLocation" id="countyLocation">
+              <option value="Nairobi">Nairobi</option>
+              <option value="Mombasa">Mombasa</option>
+              <option value="Kisumu">Kisumu</option>
+              <option value="Eldoret">Eldoret</option>
+              <option value="Nakuru">Nakuru</option>
+              <option value="Thika">Thika</option>
+              <option value="Naivasha">Naivasha</option>
+              <option value="Garisa">Garisa</option>
+              <option value="Nyeri">Nyeri</option>
+              <option value="Malindi">Malindi</option>
+              <option value="Machakos">Machakos</option>
+              <option value="Homabay">Homabay</option>
+              <option value="Kisii">Kisii</option>
+              <option value="Limuru">Limuru</option>
+              <option value="AthiRiver">AthiRiver</option>
+              <option value="Nyandarua">Nyandarua</option>
+              <option value="Makueni">Makueni</option>
+              <option value="Kiambu">Kiambu</option>
+              <option value="Turkana">Turkana</option>
+              <option value="WestPokot">WestPokot</option>
+              <option value="TransNzoia">TransNzoia</option>
+              <option value="Kilifi">Kilifi</option>
+              <option value="Kitui">Kitui</option>
+              <option value="Meru">Meru</option>
 
 
-    </form>
+          </select>
+
+
+      </form>
+
+
+    </div><!--Vet dashboard area-->
 
 
 
