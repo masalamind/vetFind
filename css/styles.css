@@ -397,7 +397,11 @@ section#blog{
 
 
 #vetDashboardPg .vetDashboardArea input[type="checkbox"]{ margin-right: .5em; } 
-#vetDashboardPg .vetDashboardArea label{ 
+
+#vetDashboardPg .vetDashboardArea input[type="checkbox"]:hover{ cursor: pointer;}
+#vetDashboardPg .vetDashboardArea label:hover{ cursor: pointer;}
+
+#vetDashboardPg .vetDashboardArea .boldlabel{ 
         font-size: 1.2em; 
         color: #2C5371; 
         font-weight: bold; 
@@ -406,5 +410,20 @@ section#blog{
 #vetDashboardPg .vetDashboardArea ul li{ margin-bottom: .5em;}
 
 #vetDashboardPg .vetDashboardArea{
-    margin: 10em auto; 
+    margin: 5em auto; 
 }
+
+#vetDashboardPg #updateVetInfoBtn:hover{
+    background-color:#2C5371 !important;
+    color: white;
+    cursor:pointer;
+}
+
+#vetDashboardPg #updateVetInfoBtn{
+    margin-top: 2em;
+    width: 30em;
+    background-color:#72984B !important;
+    color: white; 
+}
+
+.decent-width{ height: 70vh;}

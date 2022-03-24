@@ -40,26 +40,26 @@
 
     </div> <!-- .login -->
   </div> <!-- .top-nav-->
-  <div class="main-content full-width">
+  <div class="main-content decent-width">
     <div class="vetDashboardArea container">
-      <h1>Veterinarian Dashboard </h1>
+      <h1>Veterinarian Details</h1>
 
-      <p>Users will find you based on the details you provide us with on this page. </p>
+      <p>Users will find you based on the details you provide here.</p>
       <br><br>
 
 
       <form action="#" method="get" id="vetInfo">
-          <label for="">Which category do you mostly offer services in </label>
+          <p class="boldlabel">Which category do you mostly offer services in </p>
           <ul>
-              <li><input type="checkbox" class="animalCatDashboard" id="pets">Pets</li>
-              <li><input type="checkbox" class="animalCatDashboard" id="poultryandbirds">Poultry & Birds</li>
-              <li><input type="checkbox" class="animalCatDashboard" id="livestock">Livestock</li>
-              <li><input type="checkbox" class="animalCatDashboard" id="sheepandgoats">Sheep & Goats</li>
-              <li><input type="checkbox" class="animalCatDashboard" id="horses">Horses</li>
-              <li><input type="checkbox" class="animalCatDashboard" id="fish">Fish</li>
+              <li><input type="checkbox" class="animalCatDashboard" id="pets"><label for="pets">Pets</label></li>
+              <li><input type="checkbox" class="animalCatDashboard" id="poultryandbirds"><label for="poultryandbirds">Poultry and Birds</label></li>
+              <li><input type="checkbox" class="animalCatDashboard" id="livestock"><label for="livestock">Livestock</label></li>
+              <li><input type="checkbox" class="animalCatDashboard" id="sheepandgoats"><label for="sheepandgoats">Sheep & Goats</label></li>
+              <li><input type="checkbox" class="animalCatDashboard" id="horses"><label for="horses">Horses</label></li>
+              <li><input type="checkbox" class="animalCatDashboard" id="fish"><label for="fish">Fish</label></li>
           </ul>
 
-          <label for="">Which county are you located in?</label>
+          <p class="boldlabel">Which county are you located in?</p>
           <select name="countyLocation" id="countyLocation">
               <option value="Nairobi">Nairobi</option>
               <option value="Mombasa">Mombasa</option>
@@ -88,8 +88,8 @@
 
 
           </select>
-
-
+          <br>
+          <button type="submit" id="updateVetInfoBtn"> <i class="fa-solid fa-pen-to-square" style="color:white;"></i> Update Your Details</button>
       </form>
 
 
