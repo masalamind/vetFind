@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
+  <script src="https://kit.fontawesome.com/d3d56d9400.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-In</title>
+
+
+  <style>
+    .bi{
+      position: relative;
+      top: 32px;
+      right: 8px;
+    }
+    .sign-up{
+      display: none;
+    }
+  </style>
+</head>
+<body id="vetDashboardPg">
+
+  <div class="top-nav">        
+    <div class="logo">
+        <img src="logo.png" alt="getavetkenya">
+        <span>Get a Vet Kenya</span>
+    </div>
+
+    <div class="loginArea">                    
+        <ul class="login">
+            <!-- <li class="vet-login" style="margin-right: 2em"><i class="fa-solid fa-right-to-bracket"></i> Vet Login</li> -->
+           <!-- <a href="signing.html"><li class="user-login"><i class="fa-solid fa-user-plus"></i> Signup/Login</li></a> -->
+        </ul>             
+
+    </div> <!-- .login -->
+  </div> <!-- .top-nav-->
+  <div class="main-content full-width">
+
+    <h3>Veterinarian Dashboard </h3>
+
+    <p>Users will find you based on the details you provide us with on this page. </p>
+
+
+    <form action="#" method="get">
+        <label for="">Which of these categories do you mostly offer services on </label>
+        <ul>
+            <li><input type="checkbox" class="animalCatDashboard" id="pets">Pets</li>
+            <li><input type="checkbox" class="animalCatDashboard" id="poultryandbirds">Poultry & Birds</li>
+            <li><input type="checkbox" class="animalCatDashboard" id="livestock">Livestock</li>
+            <li><input type="checkbox" class="animalCatDashboard" id="sheepandgoats">Sheep & Goats</li>
+            <li><input type="checkbox" class="animalCatDashboard" id="horses">Horses</li>
+            <li><input type="checkbox" class="animalCatDashboard" id="fish">Fish</li>
+        </ul>
+
+        <label for="">Which county are you located in?</label>
+        <select name="countyLocation" id="countyLocation">
+            <option value="Nairobi">Nairobi</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Eldoret">Eldoret</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Thika">Thika</option>
+            <option value="Naivasha">Naivasha</option>
+            <option value="Garisa">Garisa</option>
+            <option value="Nyeri">Nyeri</option>
+            <option value="Malindi">Malindi</option>
+            <option value="Machakos">Machakos</option>
+            <option value="Homabay">Homabay</option>
+            <option value="Kisii">Kisii</option>
+            <option value="Limuru">Limuru</option>
+            <option value="AthiRiver">AthiRiver</option>
+            <option value="Nyandarua">Nyandarua</option>
+            <option value="Makueni">Makueni</option>
+            <option value="Kiambu">Kiambu</option>
+            <option value="Turkana">Turkana</option>
+            <option value="WestPokot">WestPokot</option>
+            <option value="TransNzoia">TransNzoia</option>
+            <option value="Kilifi">Kilifi</option>
+            <option value="Kitui">Kitui</option>
+            <option value="Meru">Meru</option>
+
+
+        </select>
+
+
+    </form>
+
+
+
+  </div>
+
+
+
+<footer class="half-height">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 secondary-info">
+              <h4>Contact Us</h4>
+              <ul>
+                  <li>088 992 992<li>
+                  <li>One West Towers Westlands, Nairobi<li>
+                  
+
+              </ul>
+          </div>
+
+          <div class="col-md-4 secondary-info">
+              <ul>
+                  <li><a href="">Terms of Use</a></li>
+                  <li><a href=""Cookie Preference></a></li>
+                  <li><a href="">Privacy</a></li>
+
+              </ul>
+          </div>
+
+          <div class="col-md-4 secondary-info">
+              <ul>
+                  <!-- <li><a href="">Our Registered Vets</a></li> -->
+                  <!-- <li><a href="">Register  as a Veterinarian</a></li> -->
+                  <!-- <li><a href=""></a></li> -->
+              </ul>
+
+          </div>
+
+          
+      </div> <!--.row -->
+
+
+  </div>
+
+
+  
+  
+  
+</footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/signing.js"></script>
+</body>
+</html>
